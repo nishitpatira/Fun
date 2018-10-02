@@ -7,11 +7,11 @@ import java.io.ObjectInputStream;
 import com.np.serialization.SerializeObject.Person;
 
 public class DeSeriaizeObject {
-	
+
 	public static void main(String[] args) throws Exception {
-		FileInputStream fileStream = new FileInputStream(new File("object.ser"));
-		ObjectInputStream ooiStream = new ObjectInputStream(fileStream);
-		Person person = (Person) ooiStream.readObject();
+		final FileInputStream fileStream = new FileInputStream(new File("object.ser"));
+		final ObjectInputStream ooiStream = new ObjectInputStream(fileStream);
+		final Person person = (Person) ooiStream.readObject();
 		System.out.println(person);
 	}
 

@@ -8,16 +8,16 @@ import java.util.List;
 import com.np.serialization.SerializeObject.Person;
 
 public class DeserializeList {
-	
+
 	public static void main(String[] args) throws Exception {
-		FileInputStream inputStream = new FileInputStream(new File("list.ser"));
-		ObjectInputStream ooiStream = new ObjectInputStream(inputStream);
-		List<Person> family = (List<Person>)ooiStream.readObject();
-		for(Person person : family){
+		final FileInputStream inputStream = new FileInputStream(new File("list.ser"));
+		final ObjectInputStream ooiStream = new ObjectInputStream(inputStream);
+		final List<Person> family = (List<Person>)ooiStream.readObject();
+		for(final Person person : family){
 			System.out.println(person);
 		}
 	}
-	
-	
+
+
 
 }

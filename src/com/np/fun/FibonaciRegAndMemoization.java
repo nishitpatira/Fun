@@ -4,7 +4,7 @@ import org.apache.commons.lang3.time.StopWatch;
 
 public class FibonaciRegAndMemoization {
 
-	private static int FIB_SEQUENCE = 60;
+	private static int FIB_SEQUENCE = 5;
 
 	public static void main(String[] args) {
 		fibRegularIterative(FIB_SEQUENCE);
