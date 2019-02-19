@@ -12,6 +12,7 @@ public class Playground {
 		int counter = sc1.nextInt();
 
 		if (counter <= 0) {
+			sc1.close();
 			throw new InputMismatchException("N must be positive");
 		} else {
 			System.out.println("Please enter " + counter + " numbers");
@@ -30,6 +31,6 @@ public class Playground {
 		mean = sum / counter;
 
 		System.out.println(mean);
-
+		sc1.close();
 	}
 }
